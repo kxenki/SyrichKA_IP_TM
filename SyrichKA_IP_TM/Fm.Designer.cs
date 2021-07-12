@@ -491,7 +491,7 @@ namespace SyrichKA_IP_TM
             this.laChanges.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.laChanges.Size = new System.Drawing.Size(126, 32);
             this.laChanges.TabIndex = 2;
-            this.laChanges.Text = "Изменения";
+            this.laChanges.Text = "Изменения и определения";
             this.laChanges.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.laChanges.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
