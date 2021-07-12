@@ -228,7 +228,11 @@ namespace SyrichKA_IP_TM
             tbAnswer.Width = paAnswers.Width - offset;
             tbAnswer.Location = new Point(paAnswers.Width / 2 - tbAnswer.Width / 2, laChanges.Location.Y + laChanges.Height + offset);
             tbAnswer.Text = $"Для исключения неисправимого брака необходимо осуществить подналадку. " +
-                $"Нужно сместить наладочный размер x̄ на {Math.Round((EI - (X - 3 * Sigma)), 2)} мм до x̄ = {Xnew} мм.";
+                $"Нужно сместить наладочный размер x̄ на {Math.Round((EI - (X - 3 * Sigma)), 2)} мм до x̄ = {Xnew} мм." + Environment.NewLine +
+                $"es - поле допуска исправимого брака;" + Environment.NewLine + 
+                $"ei - поле допуска неисправимого брака;" + Environment.NewLine +
+                $"x̄ - наладочный размер;" + Environment.NewLine +
+                $"σ - среднее квадратичное отклонение случайной.";
 
             buSuitableRight.Location = new Point(offset, tbAnswer.Location.Y + tbAnswer.Height + offset);
             buUsefulRight.Location = new Point(offset, buSuitableRight.Location.Y + offset);

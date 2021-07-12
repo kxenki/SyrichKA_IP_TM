@@ -405,7 +405,7 @@ namespace SyrichKA_IP_TM
             this.tbAnswer.BorderThickness = 1;
             this.tbAnswer.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.tbAnswer.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbAnswer.DefaultFont = new System.Drawing.Font("Segoe UI", 14F);
+            this.tbAnswer.DefaultFont = new System.Drawing.Font("Segoe UI", 12F);
             this.tbAnswer.DefaultText = "";
             this.tbAnswer.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
             this.tbAnswer.HideSelection = true;
