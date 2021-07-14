@@ -244,7 +244,7 @@ namespace SyrichKA_IP_TM
 
         private void CalcOffsetX()
         {
-            Xnew = EI - (X - 3 * Sigma) + X;
+            Xnew = X - (X + 3 * Sigma - ES);
         }
 
         private void BuBuild_Click(object sender, EventArgs e)
@@ -269,14 +269,14 @@ namespace SyrichKA_IP_TM
 
         private double DeterminationOfUseful(double X)
         {
-            useful = (F((X + 3 * Sigma - X) / Sigma) - F((ES - X) / Sigma)) * 100;
+            useful = (F((EI - X) / Sigma) - F((X - 3 * Sigma - X) / Sigma)) * 100;
             useful = useful > 0 ? useful : 0;
             return useful;
         }
 
         private double DeterminationOfFailty(double X)
         {
-            faulty = (F((EI - X) / Sigma) - F((X - 3 * Sigma - X) / Sigma)) * 100;
+            faulty = (F((X + 3 * Sigma - X) / Sigma) - F((ES - X) / Sigma)) * 100;
             faulty = faulty > 0 ? faulty : 0;
             return faulty;
         }
